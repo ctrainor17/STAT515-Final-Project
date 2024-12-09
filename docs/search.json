@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "quarto.yml.html",
+    "href": "quarto.yml.html",
+    "title": "YML",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "quarto.yml.html#quarto",
+    "href": "quarto.yml.html#quarto",
+    "title": "YML",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "quarto.yml.html#running-code",
+    "href": "quarto.yml.html#running-code",
+    "title": "YML",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Group 1 Final Project",
+    "section": "",
+    "text": "STAT 515 Section 001\nGroup 1\n\n\n\n\n\n\n\n\n\nCory Trainor\n\n\n\n\n\n\n\nLana Hashem\n\n\n\n\n\n\nNeelkumar Patel"
+  },
+  {
+    "objectID": "Main.html",
+    "href": "Main.html",
+    "title": "Predicting the Damage of Tornados",
+    "section": "",
+    "text": "The National Oceanic and Atmospheric Administration (NOAA) National Centers for Environmental Information (NCEI) publishes an annual report of storm events in the United States. It records storm occurrences and other weather phenomena intense enough to result in deaths, injuries, significant property damage, or other economic disruption. It also records unusual weather and meteorological events that occur in connection with significant storms. NOAA Storm Events Database\n\n\nThis analysis will focus on tornado events in the United States in 2023.\n\nFigure 1: Variable Descriptions\n\n\n\n\n\n\n\n\nVariable\nVariable Type\nDescription\nUnits\n\n\n\n\nDURATION\nInteger, continuous\nTornado event duration.\nMinutes\n\n\nSEASON\nFactor\nSpring, Summer, Fall, Winter\nN/A\n\n\nREGION\nFactor\nNortheast, Southeast, Midwest, Southwest, West\nN/A\n\n\nTOR_F_SCALE\nFactor\nTornado intensity\nEnhanced Fujita Scale\n\n\nTOR_LENGTH\nInterval, continuous\nLength of tornado while on the ground\nMiles\n\n\nTOR_WIDTH\nInterval, continuous\nWidth of tornado while on the ground\nYards\n\n\nDAMAGE\nInteger, continuous\nTotal amount of resulting property and commercial damage\n$\n\n\nCASUALTIES\nInteger, continuous\nTotal number of direct and indirect resulting injuries and deaths\nN/A\n\n\n\nStorm Events Variable Descriptions\n\n\n\nThe Enhanced Fujita Scale, or EF Scale, is used to categorize a tornado based on estimated winds speeds and the resulting damage. The National Weather Service is the authority that assigns the tornado EF Scale category based on the highest wind speeds and degrees of damage (Figure 2).\n\n\n\nEF Scale Wind Speeds\n\n\n*Of note, not pictured in the above chart is the classification “EFU.” EFU is short for EF-Unknown for tornadoes that could not be rated due to lack of damage evidence."
+  },
+  {
+    "objectID": "Main.html#storm-events-database",
+    "href": "Main.html#storm-events-database",
+    "title": "Predicting the Damage of Tornados",
+    "section": "",
+    "text": "The National Oceanic and Atmospheric Administration (NOAA) National Centers for Environmental Information (NCEI) publishes an annual report of storm events in the United States. It records storm occurrences and other weather phenomena intense enough to result in deaths, injuries, significant property damage, or other economic disruption. It also records unusual weather and meteorological events that occur in connection with significant storms. NOAA Storm Events Database\n\n\nThis analysis will focus on tornado events in the United States in 2023.\n\nFigure 1: Variable Descriptions\n\n\n\n\n\n\n\n\nVariable\nVariable Type\nDescription\nUnits\n\n\n\n\nDURATION\nInteger, continuous\nTornado event duration.\nMinutes\n\n\nSEASON\nFactor\nSpring, Summer, Fall, Winter\nN/A\n\n\nREGION\nFactor\nNortheast, Southeast, Midwest, Southwest, West\nN/A\n\n\nTOR_F_SCALE\nFactor\nTornado intensity\nEnhanced Fujita Scale\n\n\nTOR_LENGTH\nInterval, continuous\nLength of tornado while on the ground\nMiles\n\n\nTOR_WIDTH\nInterval, continuous\nWidth of tornado while on the ground\nYards\n\n\nDAMAGE\nInteger, continuous\nTotal amount of resulting property and commercial damage\n$\n\n\nCASUALTIES\nInteger, continuous\nTotal number of direct and indirect resulting injuries and deaths\nN/A\n\n\n\nStorm Events Variable Descriptions\n\n\n\nThe Enhanced Fujita Scale, or EF Scale, is used to categorize a tornado based on estimated winds speeds and the resulting damage. The National Weather Service is the authority that assigns the tornado EF Scale category based on the highest wind speeds and degrees of damage (Figure 2).\n\n\n\nEF Scale Wind Speeds\n\n\n*Of note, not pictured in the above chart is the classification “EFU.” EFU is short for EF-Unknown for tornadoes that could not be rated due to lack of damage evidence."
+  },
+  {
+    "objectID": "Main.html#data-exploration---trends",
+    "href": "Main.html#data-exploration---trends",
+    "title": "Predicting the Damage of Tornados",
+    "section": "Data Exploration - Trends",
+    "text": "Data Exploration - Trends\nDuring data exploration, a few data trends became apparent and helped lead us to establishing our research question. As described above, tornadoes are classified by wind speeds and the degree of resulting damage.\n\nTornado Dimensions\nFigure 3 is a scatter plot of tornado dimensions, length and width, categorized by tornado classification. Larger tornadoes tended to merit a higher EF Scale rating.\n\n\n\n\n\n\n\n\n\n\n\nRegion and Season\n“Tornado season” varies by region based on climate factors. Tornadoes are most prevalent in the Midwest and Southeast United States, although they’ve been recorded in all 50 states and some territories. In Figure 4 below, “OCONUS” is short for “outside the continental United States” and includes Alaska, Hawaii, and US territories. You can see below that winter tornadoes occur mostly in the Southeast United States due to the warmer climate."
+  },
+  {
+    "objectID": "Main.html#research-questions-methods-and-results",
+    "href": "Main.html#research-questions-methods-and-results",
+    "title": "Predicting the Damage of Tornados",
+    "section": "Research Questions, Methods, and Results",
+    "text": "Research Questions, Methods, and Results\nBased on our data exploration, we settled on three research questions:\n\nIs there a relationship between tornado regions and the resulting intensity?\nIs there a relationship between tornado seasons and the resulting intensity?\nWhat factors predict the intensity and damage?\n\n\n1. Is there a relationship between tornado regions and the resulting intensity?\n\nData Exploration\nAdd an introduction and any summary visualizations you used to begin your analysis.\n\n\n\nMethods\nDescribe the analysis techniques that you employed (variable selection, classification, regression, etc)\n\n\nResults\nDescribe your results, significance, and add any visualizations from your modeling.\n\n\n2. Is there a relationship between tornado seasons and the resulting intensity?\n\nData Exploration\nA preliminary examination of the data shows that tornados occur most frequently in the spring and summer months.\n\n\n\n\n\n\n\n\n\n\n\nMethods\n\n\nResults\n\n\n\n3. What factors predict the intensity and damage?\n\nData Exploration\n\n\nMethods\n\n\nResults"
+  },
+  {
+    "objectID": "Main.html#conclusions",
+    "href": "Main.html#conclusions",
+    "title": "Predicting the Damage of Tornados",
+    "section": "Conclusions",
+    "text": "Conclusions\nThis will be a summary of the significance/implications of our results, lessons learned, and recommendations for for future work."
+  }
+]
