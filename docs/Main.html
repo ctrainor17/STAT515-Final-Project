@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Predicting the Damage of Tornados – Group 1 Final Project</title>
+<title>Predicting the Damage of Tornadoes – Group 1 Final Project</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -94,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./Main.html" aria-current="page"> 
-<span class="menu-text">Predicting the Damage of Tornados</span></a>
+<span class="menu-text">Predicting the Damage of Tornadoes</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -125,8 +125,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#research-questions-methods-and-results" id="toc-research-questions-methods-and-results" class="nav-link" data-scroll-target="#research-questions-methods-and-results">Research Questions, Methods, and Results</a>
   <ul class="collapse">
   <li><a href="#is-there-a-relationship-between-tornado-regions-and-the-resulting-intensity" id="toc-is-there-a-relationship-between-tornado-regions-and-the-resulting-intensity" class="nav-link" data-scroll-target="#is-there-a-relationship-between-tornado-regions-and-the-resulting-intensity">1. Is there a relationship between tornado regions and the resulting intensity?</a></li>
-  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
-  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
   <li><a href="#is-there-a-relationship-between-tornado-seasons-and-the-resulting-intensity" id="toc-is-there-a-relationship-between-tornado-seasons-and-the-resulting-intensity" class="nav-link" data-scroll-target="#is-there-a-relationship-between-tornado-seasons-and-the-resulting-intensity">2. Is there a relationship between tornado seasons and the resulting intensity?</a></li>
   <li><a href="#what-factors-predict-the-intensity-and-damage" id="toc-what-factors-predict-the-intensity-and-damage" class="nav-link" data-scroll-target="#what-factors-predict-the-intensity-and-damage">3. What factors predict the intensity and damage?</a></li>
   </ul></li>
@@ -139,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Predicting the Damage of Tornados</h1>
+<h1 class="title">Predicting the Damage of Tornadoes</h1>
 </div>
 
 
@@ -236,8 +234,8 @@ ul.task-list li input[type="checkbox"] {
 <p>The Enhanced Fujita Scale, or EF Scale, is used to categorize a tornado based on estimated winds speeds and the resulting damage. The National Weather Service is the authority that assigns the tornado EF Scale category based on the highest wind speeds and degrees of damage (Figure 2).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="https://www.weather.gov/oun/efscale"><img src="images/EF Scale.png" class="img-fluid figure-img" alt="EF Scale Wind Speeds"></a></p>
-<figcaption>EF Scale Wind Speeds</figcaption>
+<p><a href="https://www.weather.gov/oun/efscale"><img src="images/EF Scale.png" class="img-fluid figure-img" alt="Figure 2: EF Scale Wind Speeds"></a></p>
+<figcaption>Figure 2: EF Scale Wind Speeds</figcaption>
 </figure>
 </div>
 <p>*Of note, not pictured in the above chart is the classification “EFU.” EFU is short for EF-Unknown for tornadoes that could not be rated due to lack of damage evidence.</p>
@@ -248,7 +246,7 @@ ul.task-list li input[type="checkbox"] {
 <p>During data exploration, a few data trends became apparent and helped lead us to establishing our research question. As described above, tornadoes are classified by wind speeds and the degree of resulting damage.</p>
 <section id="tornado-dimensions" class="level3">
 <h3 class="anchored" data-anchor-id="tornado-dimensions">Tornado Dimensions</h3>
-<p>Figure 3 is a scatter plot of tornado dimensions, length and width, categorized by tornado classification. Larger tornadoes tended to merit a higher EF Scale rating.</p>
+<p>Figure 3 is a scatter plot of tornado dimensions, length and width, categorized by tornado classification. Not surprisingly, larger tornadoes tended to merit a higher EF Scale rating.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -258,10 +256,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-</section>
-<section id="region-and-season" class="level3">
-<h3 class="anchored" data-anchor-id="region-and-season">Region and Season</h3>
-<p>“Tornado season” varies by region based on climate factors. Tornadoes are most prevalent in the Midwest and Southeast United States, although they’ve been recorded in all 50 states and some territories. In Figure 4 below, “OCONUS” is short for “outside the continental United States” and includes Alaska, Hawaii, and US territories. You can see below that winter tornadoes occur mostly in the Southeast United States due to the warmer climate.</p>
+<p>Figure 4 is a plot of tornado width and duration categorized by tornado classification. Not surprisingly, tornadoes with a wider path and a longer duration tended to merit a higher EF Scale rating.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -271,11 +266,25 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+<p>While an examination of tornado dimensions helps to inform understanding of the nature of tornadoes and the EF Scale, it doesn’t help to identify at-risk communities to help them prepare for the impact of severe storms. We next explored trends by region and season for patterns that could help identify at-risk areas.</p>
+</section>
+<section id="region-and-season" class="level3">
+<h3 class="anchored" data-anchor-id="region-and-season">Region and Season</h3>
+<p>“Tornado season” varies by region based on climate factors. Tornadoes are most prevalent in the Midwest and Southeast United States, although they’ve been recorded in all 50 states and some territories. In Figure 4 below, “OCONUS” is short for “outside the continental United States” and includes Alaska, Hawaii, and US territories. You can see below that winter tornadoes occur mostly in the Southeast United States due to the warmer climate.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Main_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="research-questions-methods-and-results" class="level2">
 <h2 class="anchored" data-anchor-id="research-questions-methods-and-results">Research Questions, Methods, and Results</h2>
-<p>Based on our data exploration, we settled on three research questions:</p>
+<p>Based on our data exploration, we settled on four research questions:</p>
 <ol type="1">
 <li><p>Is there a relationship between tornado regions and the resulting intensity?</p></li>
 <li><p>Is there a relationship between tornado seasons and the resulting intensity?</p></li>
@@ -287,25 +296,25 @@ ul.task-list li input[type="checkbox"] {
 <h4 class="anchored" data-anchor-id="data-exploration">Data Exploration</h4>
 <p>Add an introduction and any summary visualizations you used to begin your analysis.</p>
 </section>
-</section>
-<section id="methods" class="level3">
-<h3 class="anchored" data-anchor-id="methods">Methods</h3>
+<section id="methods" class="level4">
+<h4 class="anchored" data-anchor-id="methods">Methods</h4>
 <p>Describe the analysis techniques that you employed (variable selection, classification, regression, etc)</p>
 </section>
-<section id="results" class="level3">
-<h3 class="anchored" data-anchor-id="results">Results</h3>
+<section id="results" class="level4">
+<h4 class="anchored" data-anchor-id="results">Results</h4>
 <p>Describe your results, significance, and add any visualizations from your modeling.</p>
+</section>
 </section>
 <section id="is-there-a-relationship-between-tornado-seasons-and-the-resulting-intensity" class="level3">
 <h3 class="anchored" data-anchor-id="is-there-a-relationship-between-tornado-seasons-and-the-resulting-intensity">2. Is there a relationship between tornado seasons and the resulting intensity?</h3>
 <section id="data-exploration-1" class="level4">
 <h4 class="anchored" data-anchor-id="data-exploration-1">Data Exploration</h4>
-<p>A preliminary examination of the data shows that tornados occur most frequently in the spring and summer months.</p>
+<p>A preliminary examination of the data shows that tornadoes occur most frequently in the spring and summer months.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Main_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="Main_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -313,13 +322,54 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="methods-1" class="level4">
 <h4 class="anchored" data-anchor-id="methods-1">Methods</h4>
+<p>To explore the relationship between the season and EF Scale rating, we first used chi squared tests to determine if a relationship existed. The null hypothesis was that there was no relationship, and the alternate hypothesis that a relationship did exist between the season and EF Scale rating.</p>
+<p>The chi squared test yielded a p-value less than 0.05, so we reject the null hypothesis.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>        
+         EFU EF0 EF1 EF2 EF3 EF4
+  Spring 100 197 224  76  28   2
+  Summer 144 192 172  35   8   0
+  Fall    15  44  18   3   0   0
+  Winter  12  82 110  54   7   0</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Pearson's Chi-squared test
+
+data:  hyp_table
+X-squared = 121.87, df = 15, p-value &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<p>Next we explored the relationship between two other measures of tornado effects: total damage in $ and total casualties, or the total number of people injured or killed during a tornado. Since these outcome variables are quantitative numeric variables, we used ANOVA testing. The null hypothesis was that there was no relationship, and the alternate hypothesis that a relationship did exist.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>              Df    Sum Sq   Mean Sq F value Pr(&gt;F)  
+SEASON         3 1.336e+11 4.454e+10   2.497 0.0582 .
+Residuals   1460 2.604e+13 1.784e+10                 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+59 observations deleted due to missingness</code></pre>
+</div>
+</div>
+<p>ANOVA testing of the season and total damage variables yielded a p-value of greater than 0.05 but less than 0.1. In other words, there is weak evidence that the total damage of a hurricane is affected by the season.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>              Df Sum Sq Mean Sq F value Pr(&gt;F)
+SEASON         3    156   52.06   1.383  0.246
+Residuals   1519  57195   37.65               </code></pre>
+</div>
+</div>
+<p>ANOVA testing of the season and casualties variables yielded a p-value of greater than 0.1, so we fail to reject the null hypothesis and conclude that there is no relationship between the variables.</p>
 </section>
 <section id="results-1" class="level4">
 <h4 class="anchored" data-anchor-id="results-1">Results</h4>
+<p>From hypothesis testing, we conclude that there is a significant relationship between the predictor variable season and the outcome variable EF Scale rating. Hypothesis testing also indicates a weak relationship between the predictor variable season and the outcome variable total damage, however there is not a relationship to the outcome variable casualties.</p>
 </section>
 </section>
 <section id="what-factors-predict-the-intensity-and-damage" class="level3">
 <h3 class="anchored" data-anchor-id="what-factors-predict-the-intensity-and-damage">3. What factors predict the intensity and damage?</h3>
+<p>Having examined these relationships, is it possible to model tornado intensity and damage?</p>
 <section id="data-exploration-2" class="level4">
 <h4 class="anchored" data-anchor-id="data-exploration-2">Data Exploration</h4>
 </section>
